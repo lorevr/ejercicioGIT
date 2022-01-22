@@ -1,0 +1,4 @@
+
+Texto de prueba con Editor de texto Vim
+i para comenzar a escribir
+wq para guardar y salir

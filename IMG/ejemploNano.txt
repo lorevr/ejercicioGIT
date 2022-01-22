@@ -1,0 +1,2 @@
+Este en un ejemplo escrito con el editor de texto Nano
+ctrl+x para salir y pregunta si quiero guardar
