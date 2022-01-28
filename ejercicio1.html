@@ -1,0 +1,19 @@
+<script>
+    let numeroDeElementos=prompt("Dame el número de Elementos",0);
+    let penultimo=0;
+    let ultimo=1;
+    let suma;
+    if(numeroDeElementos>1){
+        console.log(penultimo);
+        console.log(ultimo);
+        for(let i=3;i<=numeroDeElementos;i++){
+            suma=penultimo+ultimo;
+            penultimo=ultimo;
+            ultimo=suma;
+            console.log(suma);
+        }
+    }else{
+        console.log("Ingrese un número mayor de elementos")
+    }
+
+</script>
