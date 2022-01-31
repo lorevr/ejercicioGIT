@@ -1,0 +1,24 @@
+<script>
+    let inicio=["unaCadena",3,9,1,10,500,1,10,true];
+    let arregloTemporal=[];
+    let fin=[];
+    
+    for (i=0;i<=inicio.length;i++){
+      if (typeof inicio[i]==="number"){
+          arregloTemporal.push(inicio[i]); //Elije solo los números y los pone en un arreglo temporal
+      } 
+    }
+    
+    for (j=0;j<arregloTemporal.length;j++){
+        let max=Math.max.apply(null, arregloTemporal); 
+        fin.push(max); 
+        let index = arregloTemporal.indexOf(max); 
+        arregloTemporal.splice(index,1); 
+        j--; 
+    }
+
+    fin.forEach(function(elem,indice,array){
+        console.log(elem);  
+    }
+    )
+</script>
