@@ -33,38 +33,63 @@ class Estudiante extends Persona {
 
 class Profesor extends Persona {
 
-constructor ( nombre, edad, asignatura = 'JS', nivel = 'Basico' ){
-    super ( nombre, edad );
-    this.asignatura = asignatura;
-    this.nivel = nivel;
-}  
+    constructor ( nombre, edad, asignatura = 'JS', nivel = 'Basico' ){
+        super ( nombre, edad );
+        this.asignatura = asignatura;
+        this.nivel = nivel;
+    }  
 
 
-obtDetalles(){
-    console.log(super.obtDetalles);
-    console.log(this.asignatura);
-    console.log(this.nivel);
-}
+    obtDetalles(){
+        console.log(super.obtDetalles);
+        console.log(this.asignatura);
+        console.log(this.nivel);
+    }
 
 }
 
 
 class Grupo extends Profesor {
 
-constructor ( nombre, edad, asignatura = 'JS', nivel = 'Basico', promedio, estudiantes ){
-    super ( nombre, edad );
-    this.promedio = promedio;
-    this.estudiantes = estudiantes;
-}  
+    
+    constructor ( nombre, edad, asignatura = 'JS', nivel = 'Basico', estudiantes ){
+        super ( nombre, edad, asignatura, nivel );
+        this.estudiantes = estudiantes;
+        this.calificacion = [];
+        this.promedio
 
+        // console.log( new calificar() );
+        //promedioGrupo();
+    }  
 
-obtDetalles(){
-    console.log(super.obtDetalles);
-    console.log(this.asignatura);
-    console.log(this.nivel);
-}
+    calificar(){
 
+        for ( let x = 0; x <= estudiantes.length; x++ ){
+            this.calificacion.push ( Math.round( Math.random() * 10 ));
+        }
+        
+        // for ( let i = 0; i <= estudiantes.length - 1; i++ ){
+        //     console.log( estudiantes[i] + 'calif: '+ this.calificacion[i] );
+        // }
 
+    }
+
+    promedioGrupo(){
+        
+        for ( i = 0; i <= this.calificacion.length; i++ ){
+            suma += this.calificacion[i];
+        }
+
+        this.promedio = suma / this.calificacion.length;
+
+        console.log( this.promedio );
+
+    }
+
+    obtDetalles(){
+        console.log(super.obtDetalles);
+        console.log( this.promedio );
+    }
 
 }
 
@@ -74,5 +99,12 @@ console.log( new Persona ( 'Lorena', 42 ));
 console.log( new Estudiante( 'Lorena', 42, 10 ));
 
 console.log( new Profesor( 'Lorena', 42, 10 ));
+
+let estudiantes = ['Pedro', 'Pablo', 'Wilma', 'Betty', 'BamBam'];
+
+
+
+console.log( new Grupo( 'Lorena', 42, 'Espanol', 'Basico', estudiantes ));
+
 
 </script>

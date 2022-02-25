@@ -1,0 +1,23 @@
+<script>
+
+const CombinacionesPalabra = palabra => {
+    const combinaciones = [];
+
+    for (let i = 0; i < palabra.length; i++) {
+
+        let combinacion = palabra.charAt(i);
+        combinaciones.push(combinacion);
+
+        for (let j = i + 1; j < palabra.length; j++) {
+
+            combinacion += palabra.charAt(j);
+            combinaciones.push(combinacion);
+        }
+    }
+
+    return combinaciones;
+}
+
+console.log( CombinacionesPalabra('casa') );
+
+</script>
