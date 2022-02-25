@@ -55,22 +55,22 @@ class Grupo extends Profesor {
     constructor ( nombre, edad, asignatura = 'JS', nivel = 'Basico', estudiantes ){
         super ( nombre, edad, asignatura, nivel );
         this.estudiantes = estudiantes;
-        this.calificacion = [];
-        this.promedio
+        // this.calificacion = [];
+        // this.promedio;
 
-        // console.log( new calificar() );
-        //promedioGrupo();
+        // let calif = new calificar();
+
     }  
 
     calificar(){
 
-        for ( let x = 0; x <= estudiantes.length; x++ ){
+        for ( let x = 0; x < this.estudiantes.length; x++ ){
             this.calificacion.push ( Math.round( Math.random() * 10 ));
         }
         
-        // for ( let i = 0; i <= estudiantes.length - 1; i++ ){
-        //     console.log( estudiantes[i] + 'calif: '+ this.calificacion[i] );
-        // }
+        for ( let i = 0; i < this.estudiantes.length; i++ ){
+            console.log( 'Calificacion ' + this.estudiantes[i] + ' es de ' + this.calificacion[i] );
+        }
 
     }
 
@@ -87,24 +87,27 @@ class Grupo extends Profesor {
     }
 
     obtDetalles(){
+        
         console.log(super.obtDetalles);
-        console.log( this.promedio );
+
+        console.log(new calificar());
+
+        // console.log( this.promedio );
     }
 
 }
 
 
-console.log( new Persona ( 'Lorena', 42 ));
+console.log( new Persona ( 'Pepe', 42 ));
 
-console.log( new Estudiante( 'Lorena', 42, 10 ));
+console.log( new Estudiante( 'Laura', 42, 10 ));
 
-console.log( new Profesor( 'Lorena', 42, 10 ));
+console.log( new Profesor( 'Carlos', 42, 10 ));
 
-let estudiantes = ['Pedro', 'Pablo', 'Wilma', 'Betty', 'BamBam'];
+let estudiantes = ['Pedro', 'Pablo', 'Wilma', 'Betty', 'BamBam', 'Picapiedra'];
 
 
-
-console.log( new Grupo( 'Lorena', 42, 'Espanol', 'Basico', estudiantes ));
+console.log( new Grupo( 'Ana', 23, 'Espanol', 'Basico', estudiantes ));
 
 
 </script>
