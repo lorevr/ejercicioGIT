@@ -1,0 +1,78 @@
+<script>
+
+class Persona {
+
+    
+    constructor ( nombre, edad){
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    obtDetalles(){
+        console.log(this.nombre);
+        console.log(this.edad);
+    }
+
+}
+
+class Estudiante extends Persona {
+
+    constructor ( nombre, edad, evaluacion ){
+        super ( nombre, edad );
+        this.evaluacion = evaluacion;
+    }  
+
+
+    obtDetalles(){
+        console.log(super.obtDetalles);
+        console.log(this.evaluacion);
+    }
+
+}
+
+
+class Profesor extends Persona {
+
+constructor ( nombre, edad, asignatura = 'JS', nivel = 'Basico' ){
+    super ( nombre, edad );
+    this.asignatura = asignatura;
+    this.nivel = nivel;
+}  
+
+
+obtDetalles(){
+    console.log(super.obtDetalles);
+    console.log(this.asignatura);
+    console.log(this.nivel);
+}
+
+}
+
+
+class Grupo extends Profesor {
+
+constructor ( nombre, edad, asignatura = 'JS', nivel = 'Basico', promedio, estudiantes ){
+    super ( nombre, edad );
+    this.promedio = promedio;
+    this.estudiantes = estudiantes;
+}  
+
+
+obtDetalles(){
+    console.log(super.obtDetalles);
+    console.log(this.asignatura);
+    console.log(this.nivel);
+}
+
+
+
+}
+
+
+console.log( new Persona ( 'Lorena', 42 ));
+
+console.log( new Estudiante( 'Lorena', 42, 10 ));
+
+console.log( new Profesor( 'Lorena', 42, 10 ));
+
+</script>

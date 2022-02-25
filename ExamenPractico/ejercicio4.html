@@ -1,0 +1,23 @@
+<script>
+
+let cadena = ''; 
+
+let palabra = prompt( 'Ingresa una frase' );
+    
+for ( i = 0; i <= palabra.length - 1; i++ ){
+  if ( palabra[i] != ' ' ){
+      cadena += palabra[i]; 
+  } 
+}
+
+cadena2 = cadena.split('').reverse().join('');
+
+
+if ( cadena.toLowerCase() == cadena2.toLowerCase() ){
+  alert( 'Es un palíndromo');
+} else {
+  alert( 'No es un palíndromo');
+}
+
+
+</script>
