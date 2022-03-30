@@ -137,6 +137,10 @@ body {
 }
 
 .produc img {
+    background-image: url(img/Circulo-blanco.png);
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: center;
     max-width: 360px;
     margin: 0;
 }
