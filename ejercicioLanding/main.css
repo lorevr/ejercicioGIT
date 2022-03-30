@@ -1,0 +1,152 @@
+
+* {
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.titulos {
+    font-weight: 700;
+    font-stretch: normal;
+    font-size: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    max-width: 62%;
+    line-height: 1.17;
+    color: #002b39;
+}
+
+#seccion1 {
+    background-image: url(img/Enmascarar\ grupo\ 289.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+#seccion1>img:nth-child(1){
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: 116px;
+    width: auto;
+}
+
+.button {
+    background-image: linear-gradient(180deg, #6fb5fb, #0080ff);
+    border: none;
+    display: block;
+    align-self: center;
+    color: white;
+    padding: 13px 25px 13px 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+    border-radius: 7px;
+    border: #4da5fd solid 1px;
+    box-shadow: 0 8px 16px 0 rgba(59, 59, 59, 0.2), 0 6px 20px 0 rgba(75, 75, 75, 0.19);
+  }
+
+  .button:hover {
+      background-image: url(img/Rectángulo\ 8376.webp);
+      color: #1489ff;
+      border: #1489ff solid 1px;
+      transition-duration: 0.4s;
+  }
+
+#tarjeta {
+    display: grid;
+    max-width: 692px;
+    margin: auto;
+    border: 1px solid #bec7ca;
+    border-radius: 10px;
+    background-color: white;
+    padding-right: 20px;
+    align-items: center;
+    text-align: left;
+}
+
+#tarjeta .contImgTarjeta:nth-child(1) img {
+    max-width: 240px;
+}
+
+.contImgTarjeta {
+    display: grid;
+    justify-items: center;
+}
+
+.contContenido {
+    font-size: 16px;
+    line-height: 21px;
+    color: #002b39;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.contContenido p {
+    line-height: 21px;
+}
+
+.contProfesionEstrellas {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 10px;
+}
+
+.estrellas {
+    justify-self: end;
+}
+
+.estrellas img {
+    height: 21px;
+}
+
+.sinEspacios {
+    margin: 0;
+}
+
+.contContenido h3 {
+    font-size: 27px;
+    color: #002b39;
+    font-weight: 500;
+}
+
+.contContenido h6 {
+    margin: 0;
+    font-size: 19px;
+    color: #1489ff;
+    font-weight: bolder;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    max-width: 1080px;
+    width: 100%;
+
+}
+
+.produc img {
+    max-width: 360px;
+    margin: 0;
+}
+
+
+
+
+@media screen and ( min-width: 630px ) {
+    #tarjeta {
+        grid-template-columns: auto auto;
+    }
+
+}
