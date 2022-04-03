@@ -147,6 +147,71 @@
     margin: auto auto;
 }
 
+#seccion3 {
+    margin-top: 60px;
+}
+
+#proceso {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 20px auto 30px auto;
+    max-width: 862px;
+    background-image: url(img/Rectangulo-7185403x.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 50% 43%;
+    font-size: 18px;
+}
+
+#proceso .proces div {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#proceso .proces:nth-child(1) {
+    justify-self: start;
+}
+
+#proceso .proces:nth-child(3) {
+    justify-self: end;
+}
+
+.proces img:nth-child(1) {
+    max-height: 25px;
+}
+
+.img1Proceso {
+    background-image: url(img/Grupo\ 9210@2x.webp);
+}
+
+.img2Proceso {
+    background-image: url(img/Grupo\ 7025@2x.webp);
+}
+
+.img3Proceso {
+    background-image: url(img/Grupo\ 7024@2x.webp);
+}
+
+.img1Proceso:hover {
+    background-image: url(img/nuevo7023.svg);
+}
+
+.img2Proceso:hover {
+    background-image: url(img/nuevo7025.svg);
+}
+
+.img3Proceso:hover {
+    background-image: url(img/Grupo-7024-1.svg);
+}
+
 @media screen and ( min-width: 630px ) {
     #tarjeta {
         grid-template-columns: auto auto;
@@ -157,4 +222,32 @@
     #productos {
         grid-template-columns: auto;
     }
+
+    #seccion3 {
+        /* background-color: #6fb5fb; */
+        height: 1100px;
+    }
+    
+    #proceso {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        max-height: 1050px;
+        background-image: none;
+        max-width: 230px;
+    }
+
+    .proces {
+        border: 1px solid #bec7ca;
+        border-radius: 15px;
+        height: 280px;
+        margin: 10px;
+        box-shadow: 0 8px 16px 0 rgba(59, 59, 59, 0.2), 0 6px 20px 0 rgba(75, 75, 75, 0.19);
+
+    }
+
+    .proces img {
+        padding-top: 15px;
+    }
+
 }
