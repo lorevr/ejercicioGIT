@@ -1,10 +1,13 @@
 
 * {
-    font-family: 'Hind', sans-serif;
-    font-weight: 300;
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
 }
 
 .titulos {
@@ -22,6 +25,7 @@
 
 .titulosSeccion {
     font-size: 40px;
+    max-width: 500px;
 }
 
 #seccion1 {
@@ -39,7 +43,6 @@
 
 .button {
     background-image: linear-gradient(180deg, #6fb5fb, #0080ff);
-    border: none;
     display: block;
     align-self: center;
     color: white;
@@ -103,9 +106,8 @@
 .contContenido h3 {
     font-size: 27px;
     color: #002b39;
-    font-weight: 500;
+    font-weight: 500px;
     text-align: left;
-    margin-bottom: 10px;
 }
 
 .contContenido h6 {
@@ -223,6 +225,7 @@
     background-image: url(img/Enmascarar-grupo-258402x.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 50px;
 }
 
 .mockups {
@@ -250,16 +253,48 @@
     z-index: 0;
 }
 
+#seccion5 {
+    background-image: url(img/Enmascarar\ grupo\ 259@2x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
 
+#seccion5 h2 {
+    padding-top: 150px;
+}
 
+.plataforma {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin: 50px auto 80px auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    font-weight: 500;
+}
+
+.plataforma div{
+    border: #c4c5c5 solid 1px;
+    padding: 15px 11% 15px 11%;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 70%, #e0f0fd);
+    box-shadow: 0 8px 16px 0 rgba(59, 59, 59, 0.2);
+    color: #002b39;
+}
+
+.plataforma span {
+    font-weight: bolder;
+}
 
 
 @media screen and ( min-width: 630px ) {
     #tarjeta {
         grid-template-columns: auto auto;
     }
-
+    
 }
+
 
 @media screen and ( max-width: 900px ) {
     #productos {
@@ -286,7 +321,6 @@
         height: 280px;
         margin: 10px;
         box-shadow: 0 8px 16px 0 rgba(59, 59, 59, 0.2), 0 6px 20px 0 rgba(75, 75, 75, 0.19);
-
     }
 
     .proces img {
@@ -301,4 +335,44 @@
         right: 80px;
     }
 
+    #seccion5 h2 {
+        padding-top: 100px;
+        max-width: 62%;
+    }
+
+    .plataforma {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px auto 50px auto;
+        max-width: 500px;
+    }
 }
+
+@media screen and (max-width: 500px) {
+    #seccion5 {
+        background-image: url(img/Rectangulo-7185403x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+        
+    #seccion5 h2 {
+        padding-top: 50px;
+    }
+        
+    .plataforma {
+        display: block;
+        margin: 50px auto 50px auto;
+        max-width: 300px;
+    }
+        
+    .plataforma div {
+        margin: 15px;
+    }
+}
+        
+@media screen and (max-width: 1250px) {
+    #seccion5 {
+        background-size: contain;
+    }
+        
+}
+
