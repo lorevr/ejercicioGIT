@@ -24,7 +24,7 @@ body {
 }
 
 .titulosSeccion {
-    font-size: 40px;
+    font-size: 38px;
     max-width: 500px;
 }
 
@@ -257,7 +257,7 @@ body {
     background-image: url(img/Enmascarar\ grupo\ 259@2x.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 20px;
+    padding-bottom: 100px;
 }
 
 #seccion5 h2 {
@@ -269,13 +269,13 @@ body {
     grid-template-columns: repeat(3, 1fr);
     max-width: 900px;
     margin: 50px auto 80px auto;
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 30px;
+    row-gap: 30px;
     font-weight: 500;
 }
 
 .plataforma div{
-    border: #c4c5c5 solid 1px;
+    border: #dcdddd solid 1px;
     padding: 15px 11% 15px 11%;
     border-radius: 10px;
     background-image: linear-gradient(to bottom, #ffffff, #ffffff 70%, #e0f0fd);
@@ -287,6 +287,45 @@ body {
     font-weight: bolder;
 }
 
+footer {
+    background-image: linear-gradient(90deg,#1489ff 0%,#0073e6 100%)!important;
+    padding: 40px 5% 40px 5%;
+    display: grid;
+}
+
+.logoRedesFooter {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.logoFooter {
+    text-align: left;
+}
+
+.redesFooter {
+    text-align: right;
+}
+
+.redesFooter img {
+    padding-left: 25px;
+}
+
+.enlacesTextoFooter {
+    display: grid;
+    grid-template-columns: 8fr 2.5fr 1.5fr;
+    justify-items: end;
+    border-top: whitesmoke solid thin;
+    padding-top: 30px;
+}
+
+.enlacesTextoFooter a {
+    text-decoration: none;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
 
 @media screen and ( min-width: 630px ) {
     #tarjeta {
@@ -294,7 +333,6 @@ body {
     }
     
 }
-
 
 @media screen and ( max-width: 900px ) {
     #productos {
@@ -328,7 +366,7 @@ body {
     }
 
     .mockups img:nth-child(1) {
-        left: 200px;
+        left: 150px;
     }
 
     .mockups img:nth-child(2) {
@@ -345,9 +383,34 @@ body {
         margin: 50px auto 50px auto;
         max-width: 500px;
     }
+
+    .logoRedesFooter {
+        grid-template-columns: auto;
+        justify-items: center;
+        row-gap: 20px;
+    }
+
+    .redesFooter {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 400px;
+    }
+
+    .enlacesTextoFooter {
+        grid-template-columns: 5.5fr 4fr 2.5fr;
+        justify-items: end;
+    }
 }
 
 @media screen and (max-width: 500px) {
+    .mockups img:nth-child(1) {
+        left: 100px;
+    }
+
+    .mockups img:nth-child(2) {
+        right: 40px;
+    }
+    
     #seccion5 {
         background-image: url(img/Rectangulo-7185403x.png);
         background-repeat: no-repeat;
@@ -366,6 +429,21 @@ body {
         
     .plataforma div {
         margin: 15px;
+    }
+
+    .redesFooter {
+        width: 90%;
+        margin: auto auto;
+    }
+
+    .redesFooter img {
+        padding-left: 5px;
+    }
+
+    .enlacesTextoFooter {
+        grid-template-columns: auto;
+        justify-items: center;
+        row-gap: 7px;
     }
 }
         
