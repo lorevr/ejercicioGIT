@@ -31,7 +31,8 @@ export const Unit = styled.li`
   padding: 46px 20px;
 
   img {
-    max-width: 240px;
+    width: 100%;
+    /* max-width: 240px; */
   }
 
   p {
@@ -66,5 +67,13 @@ export const Unit = styled.li`
       text-align: center;
       font-weight: 600;
     }
+  }
+
+  button:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  button:active {
+    background: rgba(0, 0, 0, 0.6);
   }
 `;

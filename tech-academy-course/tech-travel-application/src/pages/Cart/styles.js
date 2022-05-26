@@ -18,6 +18,17 @@ export const ContainerList = styled.ul`
   margin-top: 45px;
 `;
 
+export const EncabezadosCarrito = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  justify-items: center;
+
+  P {
+    font-weight: 600;
+  }
+`;
+
 export const TravelItem = styled.li`
   width: 100%;
   display: flex;
@@ -29,6 +40,7 @@ export const TravelItem = styled.li`
 
   img {
     height: 100px;
+    margin: 10px;
   }
 `;
 
@@ -58,6 +70,7 @@ export const Quantity = styled.input`
   height: 40px;
   border: 1px solid #0676d9;
   text-align: center;
+  justify-items: left;
 `;
 
 export const Subtotal = styled.div`

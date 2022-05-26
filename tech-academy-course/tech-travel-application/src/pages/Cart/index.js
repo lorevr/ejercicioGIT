@@ -4,6 +4,7 @@ import CartContext from "../../context/cart";
 import {
   Container,
   ContainerList,
+  EncabezadosCarrito,
   TravelItem,
   Info,
   Quantity,
@@ -22,6 +23,11 @@ function Cart() {
   return (
     <Container>
       <ContainerList>
+        <EncabezadosCarrito>
+          <p>PRODUCTO</p>
+          <p>CANTIDAD</p>
+          <p>PRECIO</p>
+        </EncabezadosCarrito>
         {state.cart.map((el) => (
           <TravelItem>
             <img src={el.photo} alt={el.title} />
